@@ -155,7 +155,7 @@ body {
     .btn {
         background-color: inherit;
         color: var(--Neutral-0);
-        padding: 0.5rem;
+        padding: 0.2rem 0.5rem;
         border: 1px solid var(--Neutral-400);
         border-radius: 0.5rem;
     }
