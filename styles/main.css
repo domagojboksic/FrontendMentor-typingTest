@@ -1,0 +1,119 @@
+:root {
+    --Neutral-900: hsl(0, 0%, 7%);
+    --Neutral-800: hsl(0, 0%, 15%);
+    --Neutral-500: hsl(240, 3%, 46%);
+    --Neutral-400: hsl(240, 1%, 59%);
+    --Neutral-0: hsl(0, 0%, 100%);
+
+    --Blue-600: hsl(214, 100%, 55%);
+    --Blue-400: hsl(210, 100%, 65%);
+
+    --Red-500: hsl(354, 63%, 57%);
+
+    --Green-500: hsl(140, 63%, 57%);
+
+    --Yellow-400: hsl(49, 85%, 70%);
+}
+
+@font-face {
+    font-family: Sora;
+    src: url("../assets/fonts/Sora/Sora-VariableFont_wght.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Neutral-900);
+    padding: 1em;
+    color: var(--Neutral-0);
+    font-size: 1.2rem;
+    font-family: "Sora";
+}
+
+.desktop-only {
+    display: none;
+}
+
+/*header*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+}
+.best-score {
+    display:flex;
+    align-items: center;
+    color: var(--Neutral-400)
+}
+.best-score img {
+    padding-right: 0.5em;
+}
+
+/*navbar*/
+.navbar {
+    height: 8rem;
+    border-bottom: 1px solid var(--Neutral-500);
+}
+.stats {
+    display:flex;
+    justify-content: space-around;
+    height: 60%;
+}
+.stat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    height: 70%;
+    color: var(--Neutral-400)
+}
+#accuracy {
+    border-left: 1px solid var(--Neutral-500);
+    border-right: 1px solid var(--Neutral-500);
+    padding: 0 3rem;
+}
+.current {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--Neutral-0)
+}
+
+.difficulty-mode {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20%;
+}
+#difficulty {
+    width: 49%;
+}
+#mode {
+    width: 49%;
+}
+.options {
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    background-color: var(--Neutral-900);
+    color: var(--Neutral-0);
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
+}
+
+@media (min-width: 48rem) {
+    .mobile-only {
+        display:none;
+    }
+    .desktop-only {
+        display:inline-block
+    }
+
+    .stat-container {
+        flex-direction: row;
+    }
+}
