@@ -2,6 +2,8 @@
 let currentDifficulty = "easy";
 let currentMode = "timed(60s)";
 let text;
+let wpm; // (numOfChars / 5) * (60 / timeNeeded)
+let accuracy; // (correctChars / totalChars)
 /*------------------*/
 
 /* getting data and displaying text based on difficulty */

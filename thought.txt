@@ -1,0 +1,37 @@
+--endgame scenarios
+1) baseline established
+2) test complete
+3) highscore smashed
+how to?
+1) determine the scenario?
+    check the wpm and compare with personalBest
+    add the missing elements based on the scenario
+
+in each the only major change is the text, whilst in the 3rd
+we also change the icon and add confeti.
+- 3 different html divs playing with hidden?
+- 1 html div with the main components and adding necessary ones
+  based on the scenario? WINNER
+
+--typing test
+1) how to get user keyboard input
+2) how to turn letters green/red based on accuracy
+3) timer and everything around it
+4) the gameloop + win conditions
+5) how to make the screen move with the user's typing
+6) restart button
+-ideas
+1) there's probably some forum/literature out there covering this
+2) based on 1) probably just adding styles
+3) setTimeout? setInterval? need to count time that passed
+4) text completed - text.length == numOfChars
+    how do we allow deleting characters and removing red styles
+    reduce numOfChars for each backslash but keep numOfErrors the same?
+   timer runs out - timer == 0:00
+5) check out literature/forum
+6) shouldn't be hard
+
+--style 
+have to style the select/options
+and mobile-first -> desktop style the additional div for endgame
+green/red characters

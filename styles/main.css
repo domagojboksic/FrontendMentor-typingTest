@@ -229,4 +229,8 @@ body {
         color: var(--Blue-400);
         border: 1px solid var(--Blue-400);
     }
+
+    .main {
+        padding: 2rem 8rem;
+    }
 }
