@@ -32,6 +32,7 @@ body {
     color: var(--Neutral-0);
     font-size: 1.2rem;
     font-family: "Sora";
+    position: relative;
 }
 
 .desktop-only {
@@ -64,6 +65,12 @@ body {
     justify-content: space-around;
     height: 60%;
 }
+#wpm {
+    flex-grow: 1;
+}
+#time {
+    flex-grow: 1;
+}
 .stat-container {
     display: flex;
     flex-direction: column;
@@ -74,9 +81,9 @@ body {
     color: var(--Neutral-400)
 }
 #accuracy {
+    flex-grow: 1;
     border-left: 1px solid var(--Neutral-500);
     border-right: 1px solid var(--Neutral-500);
-    padding: 0 3rem;
 }
 .current {
     font-size: 1.6rem;
@@ -108,12 +115,56 @@ body {
     border-radius: 0.5rem;
 }
 
-@media (min-width: 68rem) {
+.main {
+    padding-top: 2rem;
+    line-height: 3rem;
+    font-size: 2rem;
+}
+.text {
+    filter: blur(8px);
+}
+
+#container {
+    position: relative;
+}
+#welcome {
+    position: absolute;
+    top: 50vh;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.welcome-btn {
+    background-color: var(--Blue-600);
+    color: var(--Neutral-0);
+    width: 12rem;
+    height: 3rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+}
+.welcome-btn:hover {
+    cursor: pointer;
+    filter: brightness(120%);
+}
+
+.welcome-btn:focus, .btn:focus {
+    outline: 2px solid var(--Blue-600);
+    outline-offset: 3px;
+}
+
+@media (min-width: 70rem) {
     .mobile-only {
         display:none;
     }
     .desktop-only {
         display:inline-block
+    }
+
+    body {
+        padding: 1rem 5rem;
     }
 
     .navbar {
@@ -127,7 +178,17 @@ body {
         height: 80%;
         width: 50%;
     }
+    #wpm {
+        flex-grow: 0;
+        width:min-content;
+    }
+    #time {
+        flex-grow: 0;
+        width:min-content;
+    }
     #accuracy {
+        flex-grow: 0;
+        width:min-content;
         padding: 0 1rem;
         margin: 0 1rem;
     }

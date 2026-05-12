@@ -12,6 +12,7 @@
 </head>
 <body>
 
+  <div id="container">
   <header class="header">
     <div class="logo">
       <picture>
@@ -48,37 +49,44 @@
       <div id="difficulty">
         <p class="desktop-only">Difficulty:</p>
         <div class="actions desktop-only">
-          <button class="btn easy">Easy</button>
+          <button class="btn easy active-btn">Easy</button>
           <button class="btn medium">Medium</button>
           <button class="btn hard">Hard</button>
         </div>
 
         <select class="options mobile-only">
-          <option value="easy">Easy</option>
-          <option value="medium">Medium</option>
-          <option value="hard">Hard</option>
+          <option class="easy" value="easy">Easy</option>
+          <option class="medium" value="medium">Medium</option>
+          <option class="hard" value="hard">Hard</option>
         </select>
       </div>
 
       <div id="mode">
         <p class="desktop-only">Mode:</p>
         <div class="actions desktop-only">
-          <button class="btn timed">Timed(60s)</button>
+          <button class="btn timed(60s) active-btn">Timed(60s)</button>
           <button class="btn passage">Passage</button>
         </div>
 
         <select class="options mobile-only">
-          <option value="timed">Timed(60s)</option>
-          <option value="passage">Passage</option>
+          <option class="timed(60s)" value="timed(60s)">Timed(60s)</option>
+          <option class="passage" value="passage">Passage</option>
         </select>
       </div>
     </div>
   </nav>
 
   <main class="main">
-
+    <div class="text"></div>
   </main>
 
+  <div id="welcome">
+    <button class="welcome-btn">Start Typing Test</button>
+    <p>Or click the text and start typing</p>
+  </div>
+
+  </div>
+  
   <script src="scripts/main.js"></script>
 
 </body>
