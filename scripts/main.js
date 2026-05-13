@@ -62,6 +62,12 @@ function change(item) {
 
     if (idParent == "mode") {
         currentMode = value;
+        let timer = document.querySelector(".current-time");
+        if (value == "passage") {
+            timer.textContent = "0:00"
+        } else if (value == "timed(60s)") {
+            timer.textContent = "0:60";
+        }
     } else {
         currentDifficulty = value;
     }

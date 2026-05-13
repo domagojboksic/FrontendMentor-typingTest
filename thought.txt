@@ -12,6 +12,7 @@ we also change the icon and add confeti.
 - 3 different html divs playing with hidden?
 - 1 html div with the main components and adding necessary ones
   based on the scenario? WINNER
+^^COMPLETED, only js left to change dynamically
 
 --typing test
 1) how to get user keyboard input

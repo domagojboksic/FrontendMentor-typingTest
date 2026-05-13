@@ -38,7 +38,6 @@ body {
 
 #container {
     position: relative;
-    min-height: 95vh;
 }
 
 .desktop-only {
@@ -65,7 +64,6 @@ body {
 .navbar {
     height: 8rem;
     border-bottom: 1px solid var(--Neutral-500);
-    display: none;
 }
 .stats {
     display:flex;
@@ -165,15 +163,18 @@ body {
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    display: none;
+    display:none;
 }
 
 .image img{
     border-radius: 50%;
+    margin-top: 2rem;
+}
+
+.finish-checkmark {
     box-shadow: 
     0 0 0 16px #224A30, 
     0 0 0 32px #19261D;
-    margin: 32px 0;
 }
 
 .message {
@@ -242,8 +243,6 @@ body {
     bottom: 0;
     display: none;
 }
-.confeti img {
-}
 
 @media (min-width: 70rem) {
     .mobile-only {
@@ -258,9 +257,9 @@ body {
     }
 
     .navbar {
+        display: flex;
         margin-top: 1rem;
         height: 3rem;
-        display: flex;
     }
     .stats {
         display: flex;
@@ -322,5 +321,18 @@ body {
 
     .main {
         padding: 2rem 8rem;
+    }
+
+    .end-game {
+        gap: 2rem;
+    }
+
+    .end-game-stats {
+        width: 60%;
+        flex-direction: row;
+    }
+
+    .end-game .reset-btn {
+        margin-top: 1rem;
     }
 }
